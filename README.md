@@ -13,3 +13,18 @@ The final model demonstrates 34% overall accuracy on the test datase which can b
 Unfortunately the accuracy could have been better, but due to some vectors like some issues with collab or too much time lost in the training the accuracy is low.
 
 ## Source code 
+
+## Performance metrics
+![image](https://github.com/user-attachments/assets/1693daf9-d378-4945-a1ae-93dfd69c9323)
+
+## Installation and usage
+
+## References and documentation
+
+## Issues and contribution
+
+## Future work 
+For this project i see a lot of things to upgrade in the future. 
+First is the Class Balancing. We will need to increase the representation of underperforming classes using synthetic data or data augmentation techniques.
+Next would be the Improved Architectures. We will experiment with other architectures such as EfficientNet or ResNet for emotion recognition.
+Finally it will be the Real-world Deployment. Integrate the model into an application, such as a live emotion recognition system using webcam input.
