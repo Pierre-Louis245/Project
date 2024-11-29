@@ -1,0 +1,6 @@
+
+train: /content/drive/MyDrive/emotion_recognition_data/train_subset  # Répertoire d'entraînement réduit
+val: /content/drive/MyDrive/emotion_recognition_data/test  # Répertoire de validation
+
+nc: 7  # Nombre de classes d'émotions
+names: ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']  # Noms des classes
