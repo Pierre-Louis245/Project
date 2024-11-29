@@ -13,6 +13,10 @@ The final model demonstrates 34% overall accuracy on the test datase which can b
 Unfortunately the accuracy could have been better, but due to some vectors like some issues with collab or too much time lost in the training the accuracy is low.
 
 ## Source code 
+For this project, we have first Projet Image understanding. This is where there are best.pt the model I used for this project and fer2013_subset.yaml which is the subset of the dataset used for training.
+We have then the folder train_subset were several pictures of every emotion, happy, sad, angry...
+The first step for the set up is to clone the git using the command: git clone https://github.com/Pierre-Louis245/Project.git
+Then to navigate to the repository use cd Project
 
 ## Performance metrics
 To observe the result of my training model we will use a Confusion Matrix.
@@ -40,11 +44,26 @@ Incorporating additional features or augmenting the dataset to better represent 
 ![image](https://github.com/user-attachments/assets/cbf21c53-68c0-4af9-b555-e8f1a5e7fc35)
 
 ## Installation and usage
-For installing and running the project, we first need to respect this requiemremnts: having Python 3.8+, PyTorch, Ultralytics YOLOv8 and uses Google Colab
+For installing and running the project, we first need to respect this requiemremnts: having Python 3.8+, PyTorch, Ultralytics YOLOv8 and uses Google Colab.
+Then we need to install dependencies with this command: pip install -r requirements.txt.
+We then need to create a file in the repository with all necessary dependencies.
+We also need to ensure that fer2013_subset.yaml file is in the root directory of the project and best.pt file (trained YOLO model) is also in the root directory.
+After the steps before write the code: python detect.py --weights best.pt --data fer2013_subset.yaml --source path_to_image.jpg --conf-thres 0.25
+and replace path_to_image.jpg with the path to an image or folder containing images for testing.
+To evaluate the model use python val.py --weights best.pt --data fer2013_subset.yaml
+This will calculate metrics like precision, recall, and mAP (mean Average Precision) for the validation set defined in the fer2013_subset.yaml file.
 
 ## References and documentation
 
 ## Issues and contribution
+For this project the knowing issues are:
+Class imbalance: Certain classes, such as disgust and sad, are under-represented in the dataset, leading to poor performance.
+Subtle differences in emotions: Overlapping features between fear and neutral make classification challenging.
+To contribute we will use:
+Fork this repository and make a pull request.
+Report issues or suggest improvements under the "Issues" section of this repository.
+Add new datasets or propose alternative architectures for emotion recognition.
+
 
 ## Future work 
 For this project i see a lot of things to upgrade in the future. 
