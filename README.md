@@ -54,6 +54,29 @@ To evaluate the model use python val.py --weights best.pt --data fer2013_subset.
 This will calculate metrics like precision, recall, and mAP (mean Average Precision) for the validation set defined in the fer2013_subset.yaml file.
 
 ## References and documentation
+Here is some reference and documentation I used for this project.
+FER-2013 Dataset: it is used for emotion recognition tasks and was introduced in the ICML 2013 challenges.
+Dataset source: FER-2013 Dataset on Kaggle
+
+YOLO (You Only Look Once) Framework:The project relies on YOLO (You Only Look Once), a family of real-time object detection models. Depending on the version used:
+YOLOv5: YOLOv5 GitHub Repository
+YOLOv8: YOLOv8 Documentation
+
+PyTorch: is the deep learning framework used to build and train the model.
+Documentation: PyTorch Official Documentation
+
+Matplotlib: For plotting graphs and visualizing model performance metrics, Matplotlib is used.
+Documentation: Matplotlib Documentation
+
+Deep Learning Theory and Emotion Recognition
+Articles and papers on emotion recognition and YOLO:
+Emotion Recognition from Facial Expressions: A Survey
+YOLO Object Detection Papers and Resources
+
+Resources for YOLO Training and Fine-Tuning
+YOLO Training Guide: Ultralytics YOLOv5 Train Custom Data
+Training on Custom Datasets (YouTube): Training YOLO Models - YouTube
+FER Applications and Use Cases
 
 ## Issues and contribution
 For this project the knowing issues are:
