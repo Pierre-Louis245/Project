@@ -40,6 +40,7 @@ Incorporating additional features or augmenting the dataset to better represent 
 ![image](https://github.com/user-attachments/assets/cbf21c53-68c0-4af9-b555-e8f1a5e7fc35)
 
 ## Installation and usage
+For installing and running the project, we first need to respect this requiemremnts: having Python 3.8+, PyTorch, Ultralytics YOLOv8 and uses Google Colab
 
 ## References and documentation
 
