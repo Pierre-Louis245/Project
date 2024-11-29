@@ -15,7 +15,29 @@ Unfortunately the accuracy could have been better, but due to some vectors like 
 ## Source code 
 
 ## Performance metrics
+To observe the result of my training model we will use a Confusion Matrix.
+The confusion matrix illustrates the performance of the trained YOLO model in classifying emotions. 
+Each cell represents the number of predictions made for a particular class compared to the actual labels.
+
+In the matrix there is "Happy" which the most accurately predicted emotion, with 1,479 correct predictions out of 1,774 samples (recall = 0.83).
+Moreover, there is "Disgust" which has the lowest prediction accuracy, with almost no correct classifications, indicating the model struggles significantly with this class.
+Classes like "Angry" and "Fear" show moderate prediction performance but with notable misclassifications across other emotions.
 ![image](https://github.com/user-attachments/assets/1693daf9-d378-4945-a1ae-93dfd69c9323)
+
+I also wanted to evaluate the performance of my model using the classification report which provides a detailed breakdown of the model's precision, recall, and F1-score for each class. These metrics are defined as follows:
+Precision: Proportion of correct positive predictions out of all positive predictions made.
+Recall: Proportion of actual positives correctly predicted by the model.
+F1-score: Harmonic mean of precision and recall, providing a balance between the two.
+Performance breakdown:
+The highest emotion performance is "Happy" which achieved the highest scores across all metrics (precision, recall, F1-score = 0.83), reflecting the model's ability to classify this class effectively.
+We have then the moderate performance with "Angry" (F1-score = 0.50) and "Fear" (F1-score = 0.27) show acceptable performance but require further improvement to reduce misclassifications.
+Finally, we have poor performance like "Neutral" (F1-score = 0.13), "Sad" (F1-score = 0.03), and "Surprise" (F1-score = 0.03) show very low accuracy.
+"Disgust" fails completely with an F1-score of 0.00.
+Observations:
+The imbalance in class accuracy suggests that the model needs further tuning, such as:
+Addressing class imbalance during training.
+Incorporating additional features or augmenting the dataset to better represent subtle differences between certain emotions.
+![image](https://github.com/user-attachments/assets/cbf21c53-68c0-4af9-b555-e8f1a5e7fc35)
 
 ## Installation and usage
 
